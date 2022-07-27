@@ -1,7 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import MusicianImage from "../assets/Musician.jpg" 
+import MusicianImage from "../assets/Musician_one.png" 
+import MusicianImageTwo from "../assets/Musician_two.png"
+import MusicianImageThree from "../assets/Musician_three.jpg"
+import FanImage from "../assets/Fan.png"
 import CommunityImage from "../assets/Community.png"
 import SocialImage from "../assets/socialmedia.png"
 import NFTImage from "../assets/nft .png"
@@ -14,25 +17,29 @@ export default function Home() {
 
     <div id="parent">
       <div id="section-one" className='flex-col ml-40'>
-        <header className='mt-6  font-extrabold text-transparent text-5xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600' >An equitable future for <span className='text-black'>content-creators</span> </header>
+        <header className='mt-6  font-extrabold text-transparent text-5xl bg-clip-text bg-gradient-to-r from-purple-800 via-pink-500 to-red-600' >An equitable future for <span className='text-black'>content-creators</span> </header>
     <div id="subheading" className='mt-6 mb-6'>
     <div className='font-extrabold text-transparent text-1xl bg-clip-text bg-gradient-to-r from-orange-500 via-yellow-500 to-pink-500 inline-block'>Creator&apos;s space</div> 
     <div className='inline-block ml-1 text-1xl'> is a Web3 solution which redefines the possibilites of commerce & connection between  artists and their community
     </div>  
     </div>
    </div>
-    <div className='ml-[448px]'>
+    {/* <div className='ml-[448px]'>
     <button className='bg-gradient-to-r from-purple-700 via-red-400 to-pink-600 rounded-full text-lg text-white h-10 p-2 font-bold '>
     <div className=''>  
     Get Started →
     </div>
   </button>
   
+  </div> */}
+  {/* <div className='flex justify-evenly'> */}
+  <div className='ml-[380px]'>
+  <Image src={MusicianImage} alt="" width={330} height={650} ></Image> 
   </div>
-  <div className='ml-[370px]'>
-  <Image src={MusicianImage} alt="" width={330} height={450} ></Image> 
-  </div>
-  
+  {/* <Image src={MusicianImageTwo} alt="" width={480} height={470} ></Image> 
+  <Image src={MusicianImageThree} alt="" width={280} height={470} ></Image> 
+  <Image src={FanImage} alt="" width={380} height={570} ></Image>  */}
+  {/* </div> */}
     
     {/* <Button theme="primary" type="button" text="Launch Dapp" /> */}
     {/* <button>Explore</button> */}
