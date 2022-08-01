@@ -4,7 +4,7 @@ import CommunityImage from "../assets/Community.png"
 import SocialImage from "../assets/socialmedia.png"
 import NFTImage from "../assets/nft .png"
 import DashboardImage from "../assets/dashboard.png"
-import CustomCards from '../components/Web3CardOnboarding'
+import CustomCards from '../components/CustomCards'
 
 
 
@@ -12,7 +12,7 @@ export default function Home() {
   return (
 
     <div id="parent">
-      <CustomCards></CustomCards>
+      
       <div id="section-one" className='flex-col ml-40'>
         <header className='mt-6  font-extrabold text-transparent text-5xl bg-clip-text bg-gradient-to-r from-purple-800 via-pink-500 to-red-600' >An equitable future for <span className='text-black'>musicians</span> </header>
     <div id="subheading" className='mt-6 mb-6'>
@@ -101,34 +101,36 @@ We believe most of the value should go to the <span className='font-bold text-tr
         </div>
       </div> 
       <div id="section-four">
+      <div>
+        <CustomCards></CustomCards>
+        </div>
       </div> 
-      <div className='bg-white h-14 w-40'>
+      {/* <div className='bg-white h-14 w-40'>
       <span className="h-1 w-full bg-green-600 "></span>
       <hr className='border-2 w-auto' />
-      <div className='grid grid-cols-auto  divide-y'>
-        <div></div>
+      <div className='grid grid-cols-auto  divide-y'> */}
+        
       </div>
-      <div className=''></div>
-      
-      <div className='text-black text-1xl font-extrabold  ml-5 mb-12 mt-5'>CreatorSpaces™</div>
+  )
+      {/* <div className='text-black text-1xl font-extrabold  ml-5 mb-12 mt-5'>CreatorSpaces™</div> */}
 
-  
      
-
+      
+      
+     
+{/* 
       <ul className=''>
                     <li className='py-1'>Marketing</li>
                     <li className='py-1'>Analytics</li>
                     <li className='py-1'>Commerce</li>
                     <li className='py-1'>Data</li>
                     <li className='py-1'>Cloud</li>
-                </ul>
-                </div>
-                </div>
+                </ul> */}
+                // </div>
+                // </div>
       
-      
-  
 
-        )
+        
      }
     
       
