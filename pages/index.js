@@ -5,7 +5,7 @@ import SocialImage from "../assets/socialmedia.png"
 import NFTImage from "../assets/nft .png"
 import DashboardImage from "../assets/dashboard.png"
 import CustomCards from '../components/CustomCards'
-
+import { motion } from "framer-motion";
 
 
 export default function Home() {
@@ -100,8 +100,9 @@ We believe most of the value should go to the <span className='font-bold text-tr
      
         </div>
       </div> 
-      <div id="section-four">
+      <div id="section-four" className='bg-neutral-900 w-[1400px] h-[900px] px-10 py-48'>
       <div>
+        <motion.div className='text-white text-7xl flex justify-center -mt-36 mr-12 '>Onboarding Guide </motion.div>
         <CustomCards></CustomCards>
         </div>
       </div> 

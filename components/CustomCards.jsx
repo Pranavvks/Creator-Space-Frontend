@@ -8,7 +8,7 @@ import Image from 'next/image'
  const CustomCards = ()=>{
 
 
-    const CustomCardContent = [{ id:1 , image:Web, heading:"WHY WEB3?" , text:"Web3 is the internet owned by the builders and users, orchestrated with tokens. In the  Web2 world , unaccountable groups of employees at large platforms decide how information gets ranked and filtered, which users get promoted and which get banned, and other important governance decisions. In cryptonetworks / web3 these decisions are made by the community using open and transparent mechanisms.", width:470 , height:290}] ;
+    const CustomCardContent = [{ id:1 , image:Web, heading:"WHY WEB3?" , text:"Web3 is the internet owned by the builders and users, orchestrated with tokens. In the  Web2 world , unaccountable groups of employees at large platforms decide how information gets ranked and filtered, which users get promoted and which get banned, and other important governance decisions. In cryptonetworks / web3 these decisions are made by the community using open and transparent mechanisms.", width:470 , height:290 , imagepadding: ""}] ;
     
     const variants = {
         enter: (direction) => {
@@ -45,21 +45,26 @@ import Image from 'next/image'
       };
 
     return(  
-        <div>
+        <div className="">
             {
                 CustomCardContent.map((cardData)=>{
                   return (  
                   <li key={cardData.id}>
-                    
-                    <div className='max-w-[514px] h-[914px]  bg-black shadow-1xl rounded-3xl  rotate-90 ml-96'   id='card-one' >
-                                          
-                     <h1 className="text-white fixed py-96 px-8 -rotate-90">{cardData.heading}</h1>
+
+
+                    <div className="flex  -mt-36 py-6 -ml-10 -mr-36 ">  
+                    <div className='max-w-[604px] h-[914px]  bg-gradient-to-r from-slate-800 via-slate-500  to-slate-900 shadow-1xl rounded-3xl rotate-90 ml-96'   id='card-one' >
+                    <h1 className="text-transparent  bg-clip-text bg-gradient-to-r from-red-700 via-purple-700 to-pink-700 fixed py-96  -rotate-90 text-4xl font-semibold mb-56">{cardData.heading}</h1>
    
-  
-                       <div className="-rotate-90 text-left text-white text-xl py-56  ">{cardData.text}</div>      
-                       <div className="px-20  ">
+                       <div className=" -rotate-90 text-white text-2xl  font-extralight mt-64  ">{cardData.text}</div>   
+                        
+                       <div className="py-36 px-12">
                       <Image src={cardData.image} width={cardData.width} height={cardData.height} alt="Web3Logo" className="-rotate-90"/>
-                       </div>  
+                       </div>    
+                    </div> 
+
+
+                     
                        </div> 
                        
                    
