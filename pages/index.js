@@ -6,21 +6,30 @@ import NFTImage from "../assets/nft .png"
 import DashboardImage from "../assets/dashboard.png"
 import CustomCards from '../components/CustomCards'
 import { motion } from "framer-motion";
-
+import { useScroll } from "framer-motion"
+import { sentence,letter } from '../components/Animation/HeadingAnimation'
+import Navbar from '../components/Navbar'
+import IntroSection from '../components/Introsection'
 
 export default function Home() {
+
+  const heading = "Onboarding Guide" ;
+
   return (
 
-    <div id="parent">
-      
-      <div id="section-one" className='flex-col ml-40'>
-        <header className='mt-6  font-extrabold text-transparent text-5xl bg-clip-text bg-gradient-to-r from-purple-800 via-pink-500 to-red-600' >An equitable future for <span className='text-black'>musicians</span> </header>
-    <div id="subheading" className='mt-6 mb-6'>
-    <div className='font-extrabold text-transparent text-1xl bg-clip-text bg-gradient-to-r from-orange-500 via-yellow-500 to-pink-500 inline-block'>Creator&apos;s space</div> 
-    <div className='inline-block ml-1 text-1xl'> is a Web3 solution which redefines the possibilites of commerce & connection between  artists and their community
-    </div>  
-    </div>
-   </div>
+    
+    <div id="parent" className=''>
+      <Navbar />
+      <IntroSection />
+
+      {/* <div id="section-one" className='flex-col ml-40'>
+        <header className='mt-6  font-extrabold text-transparent text-5xl bg-clip-text bg-gradient-to-r from-purple-800 via-pink-500 to-red-600' >An equitable future for <span className='text-white'>musicians</span> </header> */}
+    {/* <div id="subheading" className='mt-6 mb-6'> */}
+    {/* <div className='font-extrabold text-transparent text-1xl bg-clip-text bg-gradient-to-r from-orange-500 via-yellow-500 to-pink-500 inline-block'>Creator&apos;s space</div> 
+    <div className='inline-block ml-1 text-1xl text-white'> is a Web3 solution which redefines the possibilites of commerce & connection between  artists and their community
+    </div>   */}
+    {/* </div> */}
+   {/* </div> */}
     {/* <div className='ml-[448px]'>
     <button className='bg-gradient-to-r from-purple-700 via-red-400 to-pink-600 rounded-full text-lg text-white h-10 p-2 font-bold '>
     <div className=''>  
@@ -30,9 +39,9 @@ export default function Home() {
   
   </div> */}
   {/* <div className='flex justify-evenly'> */}
-  <div className='ml-[380px]'>
+  {/* <div className='ml-[380px] shadow-white'>
   <Image src={MusicianImage} alt="" width={330} height={650} ></Image> 
-  </div>
+  </div> */}
   {/* <Image src={MusicianImageTwo} alt="" width={480} height={470} ></Image> 
   <Image src={MusicianImageThree} alt="" width={280} height={470} ></Image> 
   <Image src={FanImage} alt="" width={380} height={570} ></Image>  */}
@@ -100,9 +109,20 @@ We believe most of the value should go to the <span className='font-bold text-tr
      
         </div>
       </div> 
-      <div id="section-four" className='bg-neutral-900 w-[1400px] h-[900px] px-10 py-48'>
+      <div id="section-four" className='bg-slate-600 w-[1400px] h-[900px] px-10 py-48'>
       <div>
-        <motion.div className='text-white text-7xl flex justify-center -mt-36 mr-12 '>Onboarding Guide </motion.div>
+        <motion.div className='text-black text-7xl flex justify-center -mt-36 mr-12 ' variants={sentence}>
+          {
+           heading.split().map((char , index)=>{
+            return (
+              <motion.span key={char + "-" + index} variants={letter}>
+                {char}
+               </motion.span> 
+            )
+           } )
+           
+          }
+           </motion.div>
         <CustomCards></CustomCards>
         </div>
       </div> 

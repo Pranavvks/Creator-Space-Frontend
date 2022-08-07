@@ -5,6 +5,7 @@ import { wrap } from "popmotion";
 import {useState} from "react" ;
 import Image from 'next/image'
 
+
  const CustomCards = ()=>{
 
 
@@ -53,10 +54,10 @@ import Image from 'next/image'
 
 
                     <div className="flex  -mt-36 py-6 -ml-10 -mr-36 ">  
-                    <div className='max-w-[604px] h-[914px]  bg-gradient-to-r from-slate-800 via-slate-500  to-slate-900 shadow-1xl rounded-3xl rotate-90 ml-96'   id='card-one' >
+                    <div className='max-w-[604px] h-[914px]  bg-gradient-to-r from-neutral-900 via-slate-500  to-slate-800 shadow-xl shadow-gray-800 rounded-3xl rotate-90 ml-96'   id='card-one' >
                     <h1 className="text-transparent  bg-clip-text bg-gradient-to-r from-red-700 via-purple-700 to-pink-700 fixed py-96  -rotate-90 text-4xl font-semibold mb-56">{cardData.heading}</h1>
    
-                       <div className=" -rotate-90 text-white text-2xl  font-extralight mt-64  ">{cardData.text}</div>   
+                       <div className=" -rotate-90 text-white text-2xl  font-extralight mt-64   ">{cardData.text}</div>   
                         
                        <div className="py-36 px-12">
                       <Image src={cardData.image} width={cardData.width} height={cardData.height} alt="Web3Logo" className="-rotate-90"/>
