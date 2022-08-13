@@ -1,7 +1,9 @@
 import React, { useContext, useMemo, useState, useEffect } from "react";
 
-import { IntersectionContext } from "../intersection-observer";
-import {motion} from "framer-motion";
+import { IntersectionContext } from "./IntersectionObserver";
+import {motion} from "framer-motion";    
+    
+
 
 export const FadeInUpBox = ({
   children,
@@ -41,14 +43,10 @@ export const FadeInUpBox = ({
   };
 
   return (
-    <motion.div
-      initial="hidden"
-      animate={inView ? "show" : "hidden"}
-      exit="hidden"
-      variants={variants}
-      {...rest}
-    >
-      {children} {inView}
+    <motion.div initial="hidden"  animate={inView ? "show" : "hidden"}
+    exit="hidden" variants={variants}>
+    
     </motion.div>
+   
   );
 };

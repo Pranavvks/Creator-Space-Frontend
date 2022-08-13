@@ -18,10 +18,12 @@ export default function Home() {
   return (
 
     
-    <div id="parent" className=''>
-      <Navbar />
-      <IntroSection />
+    <div id="" className=''>
 
+      {/* <Navbar /> */}
+      <div className='bg-white'>
+      Hello
+      </div>
       {/* <div id="section-one" className='flex-col ml-40'>
         <header className='mt-6  font-extrabold text-transparent text-5xl bg-clip-text bg-gradient-to-r from-purple-800 via-pink-500 to-red-600' >An equitable future for <span className='text-white'>musicians</span> </header> */}
     {/* <div id="subheading" className='mt-6 mb-6'> */}
@@ -124,8 +126,8 @@ We believe most of the value should go to the <span className='font-bold text-tr
           }
            </motion.div>
         <CustomCards></CustomCards>
-        </div>
-      </div> 
+        {/* </div>
+      </div>  */}
       {/* <div className='bg-white h-14 w-40'>
       <span className="h-1 w-full bg-green-600 "></span>
       <hr className='border-2 w-auto' />
@@ -147,11 +149,11 @@ We believe most of the value should go to the <span className='font-bold text-tr
                     <li className='py-1'>Data</li>
                     <li className='py-1'>Cloud</li>
                 </ul> */}
-                // </div>
-                // </div>
+                </div>
+                 </div>
       
 
-        
+  )
      }
     
       
