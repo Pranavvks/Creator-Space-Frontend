@@ -11,7 +11,8 @@ module.exports = {
       // }
       fontFamily: {
         DynaPuff: ['DynaPuff', "cursive"],
-        YatraOne:['Yatra One', "cursive"]
+        YatraOne:['Yatra One', "cursive"],
+        HomeMadeApple:['Homemade Apple' , "cursive"]
        },
     },
   },

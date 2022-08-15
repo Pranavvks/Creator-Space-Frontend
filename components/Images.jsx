@@ -7,7 +7,7 @@ const commonprops = {
     height : "calc(25vw * 100 / 375)",
     overflow: "hidden" ,
     borderRadius: "50%",
-  
+    boxShadow: "0px 45px 50px rgb(0 0 0 / 25%)"
     
    
 }
@@ -57,7 +57,7 @@ const imagesixstyle = {
 
 const imagesevenstyle = {
     ...commonprops,
-    marginTop : "calc(-10vw * 100 / 375)",
+    marginTop : "calc(-25vw * 100 / 375)",
     marginLeft:"calc(264vw * 100 / 375)" ,
     display:"inline-block"
 }
@@ -65,11 +65,37 @@ const imagesevenstyle = {
 
 const imageeightstyle={
     ...commonprops,
-    marginRight: "calc(30vw * 100 / 375)",
+    marginRight: "calc(10vw * 100 / 375)",
     marginBottom: "calc(1vw * 100 / 375)",
     display : "inline-block"
     
 }
+
+const imagetenstyle={
+    ...commonprops ,
+    display:"inline-block",
+    marginTop : "calc(2vw * 100 / 375)" ,
+    marginLeft: "calc(20vw * 100 / 375)"
+}
+
+const imageelevenstyle ={
+    ...commonprops,
+    marginTop: "calc(26vw * 100 / 375)",
+    marginLeft: "calc(90vw * 100 / 375)"
+}
+
+const imagetwelevestyle ={
+    ...commonprops,
+    marginTop: "calc(-27vw * 100 / 375)",
+    marginLeft: "calc(190vw * 100 / 375)"
+}
+
+const imagethriteenstyle = {
+    ...commonprops,
+    marginTop:"calc(-27vw * 100 / 375)",
+    marginLeft: "calc(310vw * 100 / 375)"
+}
+
 
 const logostyling = {
     
@@ -79,12 +105,12 @@ const logostyling = {
 }
 
 const introtext = {
-    marginTop: "calc(-4vw * 100 / 375)" ,
+    marginTop: "calc(-75vw * 100 / 375)" ,
     marginLeft: "calc(69vw * 100 / 375)" 
 }
 
 const explorepara ={
-    marginTop: "calc(9vw * 100 / 375)" ,
+    marginTop: "calc(-24vw * 100 / 375)" ,
     marginLeft: "calc(69vw * 100 / 375)" 
 }
 
@@ -107,7 +133,7 @@ export default function Images() {
        <div style={imagefourstyle}>
         <img src="https://images.pexels.com/photos/3756772/pexels-photo-3756772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
        </div>
-       <div style={logostyling} className="text-7xl text-transparent bg-clip-text bg-gradient-to-r from-orange-400  to-black font-YatraOne">
+       <div style={logostyling} className="text-7xl text-transparent bg-clip-text bg-gradient-to-r text-black font-HomeMadeApple">
         Syllabo
        </div>
        <div style={imagefivestyle}>
@@ -120,19 +146,36 @@ export default function Images() {
         <img src="https://images.pexels.com/photos/6147040/pexels-photo-6147040.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
        </div>
        <div style={imageeightstyle}>
-       <img src="https://images.pexels.com/photos/6147040/pexels-photo-6147040.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
+       <img src="https://images.pexels.com/photos/6256289/pexels-photo-6256289.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
        </div>
-       <div style={introtext} className="text-[56px] font-extrabold font-YatraOne">
+       <div style={imagefivestyle}>
+       <img src="https://images.pexels.com/photos/4212883/pexels-photo-4212883.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+       </div>
+       <div style={imagetenstyle}>
+       <img src="https://images.pexels.com/photos/6954208/pexels-photo-6954208.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+       </div>
+      
+      
+       <div style={introtext} className="text-[56px] font-extrabold font-YatraOne absolute">
         Equitable future 
         <br />
         <span>for Musicians 🎵</span>
        </div>
-       <div style={explorepara} className=" text-black">
+       
+       <div style={explorepara} className=" text-black absolute">
         Find out how artists and their communities are leveraging the power of 
         <br />
         blockchain and the web to build the future of music 
        </div>
-       
+       <div  style={imageelevenstyle}>
+       <img src="https://images.pexels.com/photos/6892900/pexels-photo-6892900.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+       </div>
+       <div style={imagetwelevestyle}>
+        <img src="https://images.pexels.com/photos/38554/girl-people-landscape-sun-38554.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+       </div>
+       <div style={imagethriteenstyle}>
+        <img src="https://images.pexels.com/photos/5934347/pexels-photo-5934347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+       </div>
        </div>
     )
 
