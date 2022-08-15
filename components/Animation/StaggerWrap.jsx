@@ -37,6 +37,7 @@ export const StaggerWrap = ({ children, delayOrder, childrenDelay, ease }) => {
       </MotionBox> */}
 <motion.div initial="hidden"  animate={inView ? "show" : "hidden"}
     exit="hidden" variants={variants}
+    {...children}
 />
       
     </StaggerContext.Provider>

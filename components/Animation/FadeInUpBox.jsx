@@ -46,6 +46,7 @@ export const FadeInUpBox = ({
     <motion.div initial="hidden"  animate={inView ? "show" : "hidden"}
     exit="hidden" variants={variants}>
     
+    {children} {inView}
     </motion.div>
    
   );

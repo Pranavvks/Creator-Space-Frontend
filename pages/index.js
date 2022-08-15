@@ -20,9 +20,9 @@ export default function Home() {
     
     <div id="" className=''>
 
-      {/* <Navbar /> */}
+      <Navbar />
       <div className='bg-white'>
-      Hello
+        <IntroSection />
       </div>
       {/* <div id="section-one" className='flex-col ml-40'>
         <header className='mt-6  font-extrabold text-transparent text-5xl bg-clip-text bg-gradient-to-r from-purple-800 via-pink-500 to-red-600' >An equitable future for <span className='text-white'>musicians</span> </header> */}
