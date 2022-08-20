@@ -13,7 +13,8 @@ import IntroSection from '../components/Introsection'
 
 export default function Home() {
 
-  const heading = "Onboarding Guide" ;
+  
+
 
   return (
 
@@ -111,7 +112,7 @@ We believe most of the value should go to the <span className='font-bold text-tr
      
         </div>
       </div> 
-      <div id="section-four" className='bg-slate-600 w-[1400px] h-[900px] px-10 py-48'>
+      {/* <div id="section-four" className='bg-slate-600 w-[1400px] h-[900px] px-10 py-48'>
       <div>
         <motion.div className='text-black text-7xl flex justify-center -mt-36 mr-12 ' variants={sentence}>
           {
@@ -123,9 +124,9 @@ We believe most of the value should go to the <span className='font-bold text-tr
             )
            } )
            
-          }
-           </motion.div>
-        <CustomCards></CustomCards>
+          } */}
+           {/* </motion.div> */}
+        {/* <CustomCards></CustomCards> */}
         {/* </div>
       </div>  */}
       {/* <div className='bg-white h-14 w-40'>
@@ -149,11 +150,11 @@ We believe most of the value should go to the <span className='font-bold text-tr
                     <li className='py-1'>Data</li>
                     <li className='py-1'>Cloud</li>
                 </ul> */}
-                </div>
-                 </div>
+                // </div>
+                //  </div>
       
 
-  )
+  
      }
     
       
