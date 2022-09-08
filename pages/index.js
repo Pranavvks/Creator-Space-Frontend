@@ -1,19 +1,47 @@
 import Image from 'next/image'
-import MusicianImage from "../assets/Musician_one.png" 
 import CommunityImage from "../assets/Community.png"
 import SocialImage from "../assets/socialmedia.png"
 import NFTImage from "../assets/nft .png"
 import DashboardImage from "../assets/dashboard.png"
-import CustomCards from '../components/CustomCards'
-import { motion } from "framer-motion";
-import { useScroll } from "framer-motion"
-import { sentence,letter } from '../components/Animation/HeadingAnimation'
 import Navbar from '../components/Navbar'
 import IntroSection from '../components/Introsection'
-
+import Slider from '../components/Slider/Slider'
 export default function Home() {
 
-  
+
+//   const INFURA_ID = "65a787c500a841ca87aa63ebd1bf7e10"
+
+// const web3Modal = new Web3Modal({
+// 	// network: "mainnet", // optional
+// 	cacheProvider: true, // optional
+// 	providerOptions: {
+// 	  walletconnect: {
+// 		package: WalletConnectProvider, // required
+// 		options: {
+// 		  infuraId: INFURA_ID,
+// 		},
+// 	  },
+// 	},
+//   });
+
+//   const loadWeb3Modal = (async () => {
+// 		const provider = await web3Modal.connect();
+// 		console.log(provider);
+// 		setInjectedProvider(new ethers.providers.Web3Provider(provider));
+		
+// 		provider.on("chainChanged", chainId => {
+// 		  console.log(`chain changed to ${chainId}! updating providers`);
+// 		  setInjectedProvider(new ethers.providers.Web3Provider(provider));
+// 		});
+	
+// 		provider.on("accountsChanged", () => {
+// 		  console.log(`account changed!`);
+// 		  setInjectedProvider(new ethers.providers.Web3Provider(provider));
+// 		});
+
+	
+// 	} , [setInjectedProvider]
+// 	)
 
 
   return (
@@ -24,6 +52,7 @@ export default function Home() {
       <Navbar />
       <div className='bg-white'>
         <IntroSection />
+     
       </div>
       {/* <div id="section-one" className='flex-col ml-40'>
         <header className='mt-6  font-extrabold text-transparent text-5xl bg-clip-text bg-gradient-to-r from-purple-800 via-pink-500 to-red-600' >An equitable future for <span className='text-white'>musicians</span> </header> */}
@@ -56,6 +85,7 @@ export default function Home() {
 
     
     
+    
     <div id="section-two" className='bg-gradient-to-r from-yellow-400 via-purple-400  to-lime-800 '>
     <div className=''>
     </div> 
@@ -75,7 +105,7 @@ We believe most of the value should go to the <span className='font-bold text-tr
   Members of a community get exclusive access to the artists and a ton of value and utility from the NFT&apos;s they own.</p>
   
   </div> 
-  <button className='bg-white rounded-full text-lg text-black h-10 p-2 font-bold ml-[544px] mt-12 mb-14 '>
+  <button className='bg-white rounded-full text-lg text-black h-10 p-2 font-bold ml-[544px] mt-12 mb-14 ' onClick={console.log("hi")}>
     <div className=''>  
     Learn More ▶️
     </div>

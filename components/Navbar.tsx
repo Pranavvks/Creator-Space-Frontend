@@ -1,14 +1,62 @@
-import * as React from "react" ;
+import  React from "react" ;
 import { useState } from "react";
 import { Transition } from "@headlessui/react";
-import { ConnectButton } from "web3uikit"
+// import { Button, ConnectButton } from "web3uikit"
 import Link from "next/link" ;
+
+
+
+// const INFURA_ID = "65a787c500a841ca87aa63ebd1bf7e10"
+
+// const web3Modal = new Web3Modal({
+// 	// network: "mainnet", // optional
+// 	cacheProvider: true, // optional
+// 	providerOptions: {
+// 	  walletconnect: {
+// 		package: WalletConnectProvider, // required
+// 		options: {
+// 		  infuraId: INFURA_ID,
+// 		},
+// 	  },
+// 	},
+//   });
 
 function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
+	// const [injectedProvider, setInjectedProvider] = useState<ethers.providers.Web3Provider|null>();
+	// const address = useUserAddress(injectedProvider);
+	// const [user, setUser] = useState<UserData | null>(null);
+
+	// const loadWeb3Modal = useCallback(async () => {
+	// 	const provider = await web3Modal.connect();
+	// 	console.log(provider);
+	// 	setInjectedProvider(new ethers.providers.Web3Provider(provider));
+		
+	// 	provider.on("chainChanged", chainId => {
+	// 	  console.log(`chain changed to ${chainId}! updating providers`);
+	// 	  setInjectedProvider(new ethers.providers.Web3Provider(provider));
+	// 	});
+	
+	// 	provider.on("accountsChanged", () => {
+	// 	  console.log(`account changed!`);
+	// 	  setInjectedProvider(new ethers.providers.Web3Provider(provider));
+	// 	});
+
+	
+	// } , [setInjectedProvider]
+	// )
+
+	// useEffect(() => {
+	// 	if (web3Modal.cachedProvider) {
+	// 	  loadWeb3Modal();
+	// 	}
+	//   }, [loadWeb3Modal]);
+
+	
 
 	return ( 
 		<div className="pb-20">
+			
 			<nav className=" shadow-sm fixed w-full z-10 bg-zinc-900">
 				<div className="w-full">
 					<div className="flex items-center h-20 w-full">
@@ -17,6 +65,7 @@ function Navbar() {
 								<h1 className=" font-bold text-xl cursor-pointer text-white">
 									Creator<span className="text-violet-800">Space</span>
 								</h1>
+								
 							</div>
 							
 							<div className="hidden md:block">
@@ -26,6 +75,8 @@ function Navbar() {
 										passHref
 										
 									>
+										
+
 										<p className="cursor-pointer text-violet-800 font-semibold px-3 py-2 text-md hover:font-white">Home</p>
 									</Link>
 									<Link
@@ -51,6 +102,7 @@ function Navbar() {
 									</Link>
 
 									{/* <ConnectButton /> */}
+									
 								</div>
 							</div>
 						</div>
@@ -116,18 +168,18 @@ function Navbar() {
 								ref={ref}
 								className="bg-zinc-900 px-2 pt-2 pb-3 space-y-1 sm:px-3"
 							>
-								<Link
+								{/* <Link
 									href="/home"
-									activeClass="home"
-									to="home"
+									// activeClass="home"
+									// to="home"
 									smooth={true}
 									offset={50}
 									duration={500}
 									className="cursor-pointer hover:bg-blue-600 text-white hover:text-white block px-3 py-2 rounded-md text-base font-medium"
 								>
 									Home
-								</Link>
-								<Link
+								</Link> */}
+								{/* <Link
 									href="/about"
 									activeClass="about"
 									to="about"
@@ -137,9 +189,9 @@ function Navbar() {
 									className="cursor-pointer hover:bg-blue-600 text-white hover:text-white block px-3 py-2 rounded-md text-base font-medium"
 								>
 									About
-								</Link>
+								</Link> */}
 
-								<Link
+								{/* <Link
 									href="/work"
 									activeClass="work"
 									to="work"
@@ -149,8 +201,8 @@ function Navbar() {
 									className="cursor-pointer hover:bg-blue-600 text-white hover:text-white block px-3 py-2 rounded-md text-base font-medium"
 								>
 									Projects
-								</Link>
-								<Link
+								</Link> */}
+								{/* <Link
 									href="/services"
 									activeClass="services"
 									to="services"
@@ -160,7 +212,7 @@ function Navbar() {
 									className="cursor-pointer hover:bg-blue-600 text-white hover:text-white block px-3 py-2 rounded-md text-base font-medium"
 								>
 									Services
-								</Link>
+								</Link> */}
 
 								{/* <ConnectButton /> */}
 							</div>

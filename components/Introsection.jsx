@@ -2,34 +2,28 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import styled, { ThemeProvider } from "styled-components";
-import { StaggerWrap } from "../ui/atoms/stagger-wrap";
-import {FadeInUpBox} from "../ui/atoms/fade-in-up-box"
-import {Typography} from "../ui/atoms/typography"
-import {GridTemplate} from "../ui/atoms/grid-template"
-import {Img} from "../ui/atoms/img"
-import {Box} from "../ui/atoms/box"
-import {ScaleBox} from "../ui/atoms/scale-box"
-import {picsList} from "../assets/landingpageassets"
-import {Container} from "../ui/atoms/container"
-import {Flex} from "../ui/atoms/flex"
 import Images from "../components/Images"
 
 
 
-function rand(min, max) {
-  return Math.floor(Math.random() * (+max - +min)) + +min;
-}
+// function rand(min, max) {
+//   return Math.floor(Math.random() * (+max - +min)) + +min;
+// }
 
 
-const ProfilePic = styled(Img)`
-  /* box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.25); */
-  box-shadow: 0px 24px 30px rgba(0, 0, 0, 0.2);
-`;
-ProfilePic.defaultProps = {
-  borderRadius: 33,
-  height: [40, null, 30, 60],
-  width: [40, null, 30, 60]
-};
+// const ProfilePic = styled(Img)`
+//   /* box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.25); */
+//   box-shadow: 0px 24px 30px rgba(0, 0, 0, 0.2);
+// `;
+// ProfilePic.defaultProps = {
+//   borderRadius: 33,
+//   height: [40, null, 30, 60],
+//   width: [40, null, 30, 60]
+// };
+
+
+
+
 
 
 
