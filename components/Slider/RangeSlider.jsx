@@ -1,5 +1,10 @@
 import React , {memo, useEffect, useState , useRef} from "react";
 import { maxWidth } from "styled-system";
+import BasicModal from "../ModalSheet/Modal";
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import Box from "@mui/material/Box"
+
 
 const RangeSlider = ({classes, label, onChange, value, ...sliderProps}) => {
     
@@ -35,6 +40,7 @@ const RangeSlider = ({classes, label, onChange, value, ...sliderProps}) => {
 
 
     return (
+        
         <div className="flex flex-col space-y-2 p-2 w-[400px] ">
         <p>{label}</p>
         <h3>value:{values[stepIndex]}</h3>
@@ -44,7 +50,7 @@ const RangeSlider = ({classes, label, onChange, value, ...sliderProps}) => {
         value={values[stepIndex+1]}
         width={{maxWidth:"800px"}}
         step={1}
-        {...sliderProps}
+       
         className={`slider ${classes}`}
         id="myRange"
         onInput={changeCallback}
@@ -63,6 +69,7 @@ const RangeSlider = ({classes, label, onChange, value, ...sliderProps}) => {
         </ul>
         
         </div>
+        
     );
 
 

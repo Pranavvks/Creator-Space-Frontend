@@ -1,35 +1,9 @@
 import React , {useState} from "react";
-import RangeSlider from "../components/Slider/RangeSlider";
+import BasicModal from "../components/ModalSheet/Modal";
 
-
-
-
-  
-  
-
-
-
-      
-  
-    
-
-
-
-
-
-export default function NonLinearSlider() {
-  const [value, setValue] = useState(1);
-
-
-
-  const handleChange = (event) => {
-    setValue(event.target.value);
-  };
-
+export default function CreateNFT ()
+{
   return (
- <RangeSlider />
- 
-           
-      
-  );
+    <BasicModal />
+  )
 }
